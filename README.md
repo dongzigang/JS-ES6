@@ -23,6 +23,7 @@ ES6新增了let命令，用来声明变量。它的用法类似于var，但是�
       };
     }
     a[6](); //10
+    
     这样取不到索引值，需要声明一个index
     <!DOCTYPE html>
     <html lang="en">
@@ -61,3 +62,17 @@ ES6新增了let命令，用来声明变量。它的用法类似于var，但是�
       </script>
     </body>
     </html>
+
+如果用let上面的js部分可以这样写
+
+      <script type="text/javascript">
+        var main=document.getElementById("main");
+        var mains=main.getElementsByTagName("li");   
+        for(let i=0;i<mains.length;i++){
+          mains[i].onclick=function(){
+            this.style.background="red";
+            console.log(i);
+          }
+        }
+    
+      </script>
