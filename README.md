@@ -15,6 +15,7 @@ ES6新增了let命令，用来声明变量。它的用法类似于var，但是�
 利用let声明i,获取当前循环次数的索引<br>
 
 用var 声明
+
     var a = [];
     for (var i = 0; i < 10; i++) {
       a[i] = function () {
