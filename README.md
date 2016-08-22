@@ -82,10 +82,13 @@ ES6新增了let命令，用来声明变量。它的用法类似于var，但是�
     不允许重复声明已经声明过的变量
 </h3>
 <h2>const命令</h2>
-const声明一个只读的常量。一旦声明，常量的值就不能改变<br>
+const声明一个只读的常量。一旦声明，常量的值就不能改变，除此之外用法同let<br>
+ps:let不能重复声明的变量，但变量值可以改变
 
         const PI = 3.1415;
         PI // 3.1415
         
         PI = 3;
         // TypeError: Assignment to constant variable.
+
+用let const class声明的变量不是全局变量 
