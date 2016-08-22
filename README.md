@@ -63,7 +63,7 @@ ES6新增了let命令，用来声明变量。它的用法类似于var，但是�
     </body>
     </html>
 
-如果用let上面的js部分可以这样写
+如果用let声明i     上面的js部分可以这样写
 
       <script type="text/javascript">
         var main=document.getElementById("main");
@@ -76,3 +76,16 @@ ES6新增了let命令，用来声明变量。它的用法类似于var，但是�
         }
     
       </script>
+
+<h3>
+    let 不存在变量提升<br>
+    不允许重复声明已经声明过的变量
+</h3>
+<h2>const命令</h2>
+const声明一个只读的常量。一旦声明，常量的值就不能改变<br>
+
+        const PI = 3.1415;
+        PI // 3.1415
+        
+        PI = 3;
+        // TypeError: Assignment to constant variable.
